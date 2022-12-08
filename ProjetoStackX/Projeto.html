@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="Index.css">
+    <title>Projeto StackX</title>
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <div class="Logo">
+            <img src="images/StackXLogo.jpg" alt="Logo" width="200px" height="50px"/>
+        </div>
+            
+        
+    </header>
+
+    <main>
+        <div>
+            <h2 class = "msg1" id = "msg1"> Olá, meu nome é Lucas Gabriel e eu sou Desenvolvedor Front-End,</h2>
+            <h2 class = "msg2" id = "msg2">Tecnologias que tenho experiência:</h2>
+        </div>
+
+        <div class="Caixa">
+            <li>
+                HTML 
+            </li>
+            <li>
+                CSS
+            </li>
+            <li>
+                JavaScript
+            </li>
+        </div>
+
+        <div class="Buttons">
+            
+            <button id="PT" onclick="newLanguage('pt')">
+                <img src="images/IconBR.jpg" alt="ButtonBR"width="10px" height="10px"/>
+                Português</button>
+            <button id="EN" onclick="newLanguage('en')">
+                <img src="images/IconEN.jpg" alt="ButtonEN"width="10px" height="10px"/>
+                English</button>
+            <button id="ES" onclick="newLanguage('es')">
+                <img src="images/IconSP.jpg" alt="ButtonSP"width="10px" height="10px"/>
+                Español</button>
+
+
+        </div>
+
+                <script>
+
+                    function newLanguage(language)
+                    {
+                        location.hash = language;
+                        location.reload();
+                    }
+                    let msg1 = document.getElementById("msg1")
+                    let msg2 = document.getElementById("msg2")
+
+                    let language = 
+                    {
+                        en:
+                        {
+                            msg1: "Hello, my name is Lucas Gabriel and I am a Front-End developer,",
+                            msg2: "These are the technologies I have experience with:"
+                        },
+                        pt:
+                        {
+                            msg1: "Olá, meu nome é Lucas Gabriel e eu sou Desenvolvedor Front-End,",
+                            msg2: "Tecnologias que tenho experiência:"
+                        },
+                        es:
+                        {
+                            msg1: "Hola, mi nombre es Lucas Gabriel y soy Desarrollador Front-End,",
+                            msg2: "Tecnologías en las que tengo experiencia:"
+                        },
+                    }
+                if (window.location.hash)
+                {
+
+                    if (window.location.hash == "#en")
+                    {
+                        msg1.textContent = language.en.msg1;
+                        msg2.textContent = language.en.msg2;
+                    }
+                    else if (window.location.hash == "#es")
+                    {
+                        msg1.textContent = language.es.msg1;
+                        msg2.textContent = language.es.msg2;
+                    }
+
+                }
+            
+                    
+            
+                </script>
+         
+
+        
+
+    </main>
+
+</body>
+
+
+</html>

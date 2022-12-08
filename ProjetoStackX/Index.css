@@ -1,0 +1,68 @@
+body
+{
+    font-family: 'Inter';
+    font-size: 14px;
+    margin: 0px;
+    background-color: black;
+}
+header{
+    background-color: rgb(39, 39, 39);
+    margin: 0px;
+    padding: 0px;
+    height: 70px;
+    margin-left: 0px;
+    text-align: center;
+    overflow: auto;
+}
+
+.Logo{
+    background-color: rgb(129, 129, 129);
+    width: 200px;
+    height: 50px;
+    margin-left: 45%;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+
+h2.msg1{
+    color: white;
+    padding-top: 100px;
+    font-weight: 100;
+    text-align: center;
+}
+h2.msg2
+{
+    color: white;
+    text-align: center;
+}
+
+div.Caixa
+{
+    background-color: rgb(26, 16, 16);
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    outline: auto;
+    outline-color: rgb(94, 17, 17);
+}
+div.Buttons
+{   margin-left: 30%;
+    margin-top: 200px;
+    
+}
+button{
+    margin-left: 100px;
+    background-color: rgb(129, 129, 129);
+    border-radius: 5px;
+}
+li{
+    color: white;
+    padding: 10px;
+}
+
+.active{
+    color: beige;
+    opacity: 80%;
+}
